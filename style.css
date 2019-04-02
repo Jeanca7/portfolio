@@ -1,0 +1,293 @@
+html, body {
+  margin: 0; padding: 0;
+}
+
+a{
+    transition-property: border-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    outline: 0;
+}
+
+
+
+
+
+.backg{
+    background-size: 2250px auto;
+     width: 6750px;
+}
+
+.backg{
+     animation-duration: 70s;
+     animation-timing-function: linear;
+     animation-delay: 0s;
+     animation-iteration-count: infinite;
+     animation-direction: normal;
+     animation-fill-mode: none;
+     animation-play-state: running;
+     animation-name: backg;
+     backface-visibility: hidden;
+     transform: translate3d(0,0,0);
+     background: url(images/background-img.jpg) bottom left;
+     background-repeat: repeat-x;
+     height: 700px;
+     left: 0;
+     opacity: 1;
+     position: fixed;
+     top: 0;
+}
+
+@-webkit-keyframes backg{
+    0%{
+        transform: translate3d(0,0,0);
+    }
+    
+    100%{
+        transform: translate3d(-2250px,0,0);
+    }
+}
+
+.wrap{
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-name: wrap;
+    height: 700px;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+@-webkit-keyframes wrap{
+    0%{
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+}
+
+/*.vector{*/
+/*    animation-duration: 1.5s;*/
+/*    animation-timing-function: ease;*/
+/*    animation-delay: 1.5s;*/
+/*    animation-iteration-count: 1;*/
+/*    animation-direction: normal;*/
+/*    animation-fill-mode: forwards;*/
+/*    animation-play-state: running;*/
+/*    animation-name: vector;*/
+/*    background-attachment: fixed, fixed;*/
+/*    background-image: url(images/colorvec.jpg);*/
+/*    background-position: top left, center center;*/
+/*    background-repeat: repeat, no-repeat;*/
+/*    background-size: auto, cover;*/
+/*    height: 700px;*/
+/*    left: 0;*/
+/*    opacity: 0.1;*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    width: 100%;*/
+/*}*/
+
+/*@-webkit-keyframes vector{*/
+/*    0%{*/
+/*        opacity: 0;*/
+/*    }*/
+    
+/*    100%{*/
+/*        opacity: 0.6;*/
+/*    }*/
+/*}*/
+
+.vector{
+    background-image: url(images/colorvec.jpg);
+    height: 700px;
+    width: 100%;
+    opacity: 0.7;
+    position: fixed;
+}
+
+.intro{
+    height: 700px;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+}
+
+.intro:before{
+    content: '';
+    display: inline-block;
+    height: 700px;
+    margin-right: 0;
+    vertical-align: middle;
+    width: 1px;
+}
+
+.info{
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 2.25s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-name: info;
+    backface-visibility: hidden;
+    transform: translate3d(0,0,0);
+    cursor: default;
+    display: inline-block;
+    opacity: 0;
+    position: relative;
+    text-align: center;
+    top: -1em;
+    vertical-align: middle;
+    width: 90%;
+}
+
+@-webkit-keyframes info{
+    0%{
+        transform: translate3d(0,1em,0);
+        opacity: 0;
+    }
+    
+    100%{
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+
+.info h1{
+    font-size: 4.35em;
+    font-weight: 900;
+    letter-spacing: -0.035em;
+    line-height: 1em;
+}
+
+.info p{
+    font-size: 1.25em;
+    margin: 0.75em 0 0.25em 0;
+    opacity: 0.75;
+}
+
+.info nav{
+    margin: 1.5em 0 0 0;
+}
+
+ul{
+    list-style: none;
+}
+
+.info nav li:nth-child(1){
+    animation-delay: 2.5s;
+}
+
+.info nav li:nth-child(2){
+    animation-delay: 2.75s;
+}
+
+.info nav li:nth-child(3){
+    animation-delay: 3s;
+}
+
+
+.info nav li{
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-name: icons;
+    backface-visibility: hidden;
+    transform: translate3d(0,0,0);
+    display: inline-block;
+    height: 5.35em;
+    line-height: 5.885em;
+    opacity: 0;
+    position: relative;
+    top: 0;
+    width: 5.35em;
+}
+
+@-webkit-keyframes icons{
+    0%{
+        transform: translate3d(0,1em,0);
+        opacity: 0;
+    }
+    
+    100%{
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+
+.info nav a{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    border:0;
+    display: inline-block;
+}
+
+
+.info nav a:before{
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    border-radius: 100%;
+    border: solid 1px #fff;
+    display: block;
+    font-size: 1.75em;
+    height: 2.5em;
+    position: relative;
+    text-align: center;
+    top: 0;
+    width: 2.5em;
+}
+
+.info nav a:hover{
+    font-size: 1.1em;
+}
+
+
+.info nav a:hover:before{
+    background-color: rgba(255,255,255,0.175);
+    color: #fff;
+}
+
+.info nav a:active{
+    font-size: 0.95em;
+    background: none;
+}
+
+.info nav a:active:before{
+    background-color: rgba(255,255,255,0.35);
+    color: #fff;
+}
+
+.info nav a span{
+    display: none;
+}
+
+
+
+.icon{
+    text-decoration: none;
+    position: relative;
+}
+
+.icon:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+}
