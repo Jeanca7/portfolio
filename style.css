@@ -577,12 +577,14 @@ ul{
 
 .pro-desc{
     text-align: justify;
+    font-size: larger;
 }
 
 
 .tech{
     margin-bottom: 2rem;
     text-align: left;
+    font-size: large;
 }
 
 
