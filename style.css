@@ -200,15 +200,6 @@ html, body{
 
 .intro{
     width: 100%;
-    position: relative;
-    text-align: center;
-    
-    /*just incorporated*/
-    top: 40%;
-    transform: translateY(-50%);
-    
-    /*animation*/
-    
     animation-duration: 1s;
     animation-timing-function: ease;
     animation-delay: 2.25s;
@@ -280,7 +271,6 @@ html, body{
 }
 
 .info h1{
-    font-size: 4.35em;
     font-weight: 900;
     letter-spacing: -0.035em;
     line-height: 1em;
@@ -324,12 +314,9 @@ ul{
     backface-visibility: hidden;
     transform: translate3d(0,0,0);
     display: inline-block;
-    height: 5.35em;
-    line-height: 5.885em;
     opacity: 0;
     position: relative;
     top: 0;
-    width: 5.35em;
 }
 
 @-webkit-keyframes icons{
@@ -515,13 +502,10 @@ ul{
 
 .person-desc h2{
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 3.7rem;
-    margin-bottom: 60px;
 }
  
 .person-desc p{
     font-family: 'Merriweather', serif;
-    font-size: 23px;
     text-align: justify;
 }
 
@@ -555,8 +539,6 @@ ul{
 }
 
 .skills-section{
-    padding-top: 70px;
-    padding-bottom: 50px;
     font-family: 'Merriweather', serif;
     font-size: 20px;
     border-bottom: solid 1px #eeeeee;
@@ -564,14 +546,8 @@ ul{
 
 .skills-section h2{
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 3.7rem;
-    margin-bottom: 30px;
 }
 
-.skills-section p{
-    margin-bottom: 3rem;
-    font-size: 23px;
-}
 
 .feature-skills i{
     background-color: #ff1a1a; 
@@ -586,6 +562,8 @@ ul{
     margin-right: 10px;
 }
 
+
+/*bigger screen*/
 
 @media(min-width: 576px){
 
@@ -604,11 +582,192 @@ ul{
     padding-right: 40px;
     }
     
+    
+.info nav li{
+    height: 5.35em;
+    line-height: 5.885em;
+    width: 5.35em;
+    }
+    
+
+.intro{
+    position: relative;
+    text-align: center;
+    top: 40%;
+    transform: translateY(-50%);
+    }
+    
+.info h1{
+    font-size: 4.35em;
+    }
+
+.person-desc h2{
+    font-size: 3.7rem;
+    margin-bottom: 60px;
+}
+
+
+.person-desc p{
+    font-size: 23px;
+}
+
+
+.skills-section h2{
+    font-size: 3.7rem;
+    margin-bottom: 30px;
+}
+
+.skills-section{
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.skills-section p{
+    margin-bottom: 3rem;
+    font-size: 23px;
+}
+
+.recent-w{
+    font-size: 3.7rem;
+    margin-top: 70px;
+}
+
+.projects{
+    padding-top: 69px;
+}
+
+.project3{
+    border-bottom: 2px solid #eeeeee;
+}
+
+.projects h2{
+    letter-spacing: 0.075em;
+    font-size: 3rem;
+}
+
+
+.pro-desc{
+    text-align: justify;
+    font-size: larger;
+}
+
+.project-img{
+    margin: 2.5rem 0;
+}
+
+.contact-info section{
+    padding: 20px 23px;
+}
+
+.project2{
+    border-top: 2px solid #eeeeee;
+    border-right: 2px solid #eeeeee;
+    border-bottom: 2px solid #eeeeee;
+}
+
+.form-footer{
+    margin-bottom: 50px;
+}
+
 }
 
 @media(max-width: 575px){
     .feature-skills li{
         margin-bottom: 1.6875em;
+    }
+    
+    .info nav li{
+    height: 5em;
+    line-height: 5em;
+    width: 5em;
+    }
+    
+    .intro{
+    position: absolute;
+    /*text-align: center;*/
+    top: 30%;
+   }
+    
+    .info h1{
+    font-size: 3.35em;
+    }
+    
+    
+    .person-desc h2{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    }
+
+    .person-desc p{
+        font-size: 20px;
+    }
+    
+    .skills-section h2{
+    font-size: 3rem;
+    margin-bottom: 15px;
+    }
+    
+    .skills-section{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    }
+    
+    .skills-section p{
+    margin-bottom: 2rem;
+    font-size: 20px;
+    }
+    
+    .feature-skills{
+    font-size: 20px;
+    }
+    
+    .recent-w{
+    font-size: 3rem;
+    margin-top: 30px;
+    text-align: center;
+    }
+    
+    .projects{
+    padding-top: 30px;
+    }
+    
+
+    .projects h2{
+    letter-spacing: 0.07em;
+    font-size: 2rem;
+    margin-top: 12px;
+    }
+    
+    .pro-desc{
+    text-align: left;
+    font-size: large;
+    }
+    
+    .project-img{
+    margin: 2rem 0;
+    }
+    
+    .button{
+        margin-bottom: 10px;
+    }
+    
+    .message-sec{
+    margin-bottom: 30px;
+    }
+    
+    .contact-info section{
+    padding: 20px 7px;
+    }
+    
+    .project2{
+    border-right: 2px solid #eeeeee;
+    border-bottom: 2px solid #eeeeee;
+    }
+    
+    .form-footer{
+    margin-bottom: 15px;
     }
 }
 
@@ -640,7 +799,6 @@ ul{
 
 
 .projects{
-    padding-top: 69px;
     padding-bottom: 70px;
     border-bottom: solid 1px #eeeeee;
 }
@@ -649,21 +807,17 @@ ul{
     padding: 15px 20px;
 }
 
+
 .project1{
     border: 2px solid #eeeeee;
     justify-content: center;
-}
+    }
 
-.project2{
-    border-top: 2px solid #eeeeee;
-    border-right: 2px solid #eeeeee;
-    border-bottom: 2px solid #eeeeee;
-}
+
 
 .project3{
     border-left: 2px solid #eeeeee;
     border-right: 2px solid #eeeeee;
-    border-bottom: 2px solid #eeeeee;
 }
 
 
@@ -677,11 +831,6 @@ ul{
     text-align: center;
 }
 
-.pro-desc{
-    text-align: justify;
-    font-size: larger;
-}
-
 
 .tech{
     margin-bottom: 2rem;
@@ -692,15 +841,11 @@ ul{
 
 .recent-w{
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 3.7rem;
-    margin-top: 70px;
 }
 
 .projects h2{
     font-family: 'Source Sans Pro', Helvetica, sans-serif;
     font-weight: 900;
-    letter-spacing: 0.075em;
-    font-size: 3rem;
 }
 
 .tech-used{
@@ -726,7 +871,6 @@ ul{
     width: 100%;
     overflow: hidden;
     display: block;
-    margin: 2.5rem 0;
 }
 
 .image{
@@ -738,7 +882,6 @@ ul{
     padding-top: 33px;
     padding-bottom: 33px;
     margin-top: 70px;
-    margin-bottom: 50px;
     line-height: 1.5;
 }
 
@@ -788,7 +931,6 @@ ul{
 
 
 .contact-info section{
-    padding: 20px 23px;
     border-bottom: solid 2px #e2e2e2;
 }
 
