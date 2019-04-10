@@ -2,7 +2,7 @@
 body{
     /*line-height: 1;*/
     /*-webkit-text-size-adjust: none;*/
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 
@@ -27,13 +27,79 @@ html, body{
 }
 
 
-.backg{
-    background-size: 2250px auto;
-    width: 6750px;
+@media screen and (max-width: 1680px){
+    .backg{
+        background-size: 1500px auto;
+        width: 4500px;
+    }
+
+    @-webkit-keyframes backg{
+    0%{
+        transform: translate3d(0,0,0);
+    }
+    
+    100%{
+        transform: translate3d(-1500px,0,0);
+    }
+  }
+}
+
+
+@media screen and (max-width: 1280px){
+    .backg{
+        background-size: 750px auto;
+        width: 2250px;
+    }
+    
+    @-webkit-keyframes backg{
+    0%{
+        transform: translate3d(0,0,0);
+    }
+    
+    100%{
+        transform: translate3d(-750px,0,0);
+    }
+  }
+}
+
+
+@media screen and (max-width: 736px){
+    .backg{
+        background-size: 300px auto;
+        width: 900px;
+    }
+    
+    @-webkit-keyframes backg{
+    0%{
+        transform: translate3d(0,0,0);
+    }
+    
+    100%{
+        transform: translate3d(-300px,0,0);
+    }
+  }
+}
+
+
+@media screen and (max-width: 480px){
+    .backg{
+        background-size: 412.5px auto;
+        width: 1237.5px;
+    }
+    
+    @-webkit-keyframes backg{
+    0%{
+        transform: translate3d(0,0,0);
+    }
+    
+    100%{
+        transform: translate3d(-412.5px,0,0);
+    }
+  }
 }
 
 .backg{
-     animation-duration: 70s;
+     animation-duration: 90s;
      animation-timing-function: linear;
      animation-delay: 0s;
      animation-iteration-count: infinite;
@@ -41,9 +107,10 @@ html, body{
      animation-fill-mode: none;
      animation-play-state: running;
      animation-name: backg;
+     
      backface-visibility: hidden;
      transform: translate3d(0,0,0);
-     background: url(images/background-img.jpg) bottom left;
+     background: url(images/city.jpg) bottom left;
      background-repeat: repeat-x;
      height: 100%;
      left: 0;
@@ -62,6 +129,13 @@ html, body{
     }
 }
 
+
+.backg{
+    background-size: 2250px auto;
+    width: 6750px;
+}
+
+
 .wrap{
     animation-duration: 3s;
     animation-timing-function: ease;
@@ -75,6 +149,12 @@ html, body{
     min-height: 100%;
     opacity: 0;
     position: relative;
+    color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow-x: hidden;
+    vertical-align: baseline;
 }
 
 @-webkit-keyframes wrap{
@@ -296,11 +376,11 @@ ul{
     font-size: 2.2em;
     border-color: transparent;
     text-decoration: none;
-    color: #737373;
+    color: #18bfef !important;
 }
 
 .icon:hover{
-    color: #4d4d4d;
+    color: #18bfef !important;
 }
 
 /*.info nav a:hover:before{*/
@@ -327,7 +407,7 @@ ul{
 .icon{
     text-decoration: none;
     position: relative;
-    color: #4d4d4d;
+    color: white;
 }
 
 
@@ -348,10 +428,6 @@ ul{
 
 /*.intro footer{*/
 .wrap footer{
-    transition-property: opacity, transform;
-    transition-duration: 2s, 1s;
-    transition-timing-function: ease-in-out, ease-in-out;
-    transition-delay: 1.25s;
     margin: 0;
     width: 90%;
     display: inline-block;
@@ -359,7 +435,37 @@ ul{
     text-align: center;
     left: 5%;
     bottom: 0;
+    
+    /*animation*/
+    
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 3.25s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-name: footer;
+    backface-visibility: hidden;
+    transform: translate3d(0,0,0);
+    cursor: default;
+    opacity: 0;
 }
+
+
+@-webkit-keyframes footer{
+    0%{
+        transform: translate3d(0,1em,0);
+        opacity: 0;
+    }
+    
+    100%{
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+
+
 
 /*.intro footer:after{*/
 .wrap footer:after{
@@ -373,11 +479,7 @@ ul{
 }
 
 .to-personal{
-    transition-property: background-color, color;
-    transition-duration: 0.35s, 0.35s;
-    transition-timing-function: ease-in-out, ease-in-out;
-    transition-delay: 0s, 0s;
-    -webkit-appearance: none;
+    /*-webkit-appearance: none;*/
     position: relative;
     display: inline-block;
     border: solid 2px #e5e6e7;
