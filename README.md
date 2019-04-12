@@ -18,7 +18,7 @@ At the end of the portfolio viewers can contact me by sending me a direct messag
 
 ## Mockups
 * [portfolio-desktop.pdf](https://github.com/Jeanca7/portfolio/files/3065376/portfolio-desktop.pdf)
-* [portfolio-desktop.pdf](https://github.com/Jeanca7/portfolio/files/3065386/portfolio-desktop.pdf)
+* [mockup-portfolio mobile.pdf](https://github.com/Jeanca7/portfolio/files/3073428/mockup-portfolio.mobile.pdf)  
 
 ## Code style
 I have used standard code style.
