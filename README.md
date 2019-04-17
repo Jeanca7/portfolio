@@ -44,9 +44,9 @@ Testing was executed manually to ensure the website's responsiveness and funcion
 It was also tested on Firefox, Chrome and Safari. I ensured Images and overall layout are responsive as well as links and buttons work effectively.  
 
 ## Credits
- Transformation function to move element in 3d (https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate3d)  
- How to make a DIV element fill the browser window (https://snippets.aktagon.com/snippets/291-how-to-make-a-div-element-fill-the-browser-window)  
- Animated loop background image example (https://codepen.io/subz/pen/GgPrJP)    
+ Transformation function to move element in 3d. (https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate3d)  
+ How to make a DIV element fill the browser window. (https://snippets.aktagon.com/snippets/291-how-to-make-a-div-element-fill-the-browser-window)  
+ Animated loop background image example. (https://codepen.io/subz/pen/GgPrJP)    
  
 ### Media
 * Images obtained from Shutterstock and Pexels.com  

@@ -1,4 +1,6 @@
 
+/*general*/
+
 html{
     scroll-behavior: smooth;
 }
@@ -11,11 +13,14 @@ html, body{
 }
 
 
+/*wrap*/
 
 .wrap nav{
     display: block;
 }
 
+
+/*background*/
 
 @media screen and (max-width: 1680px){
     .backg{
