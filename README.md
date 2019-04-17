@@ -37,7 +37,7 @@ To deploy:
 3. Select the master branch
 4. Enter the custom domain. 
 
-(https://jeanca7.github.io/portfolio/)
+(https://www.jeandeveloper.com/)
 
 ## Tests
 Testing was executed manually to ensure the website's responsiveness and funcionality work correctly. The site was tested on a 23.8" monitor and 13.3" MacBook Air, iphone X and ipad Pro. 

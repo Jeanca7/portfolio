@@ -1,11 +1,4 @@
 
-body{
-    /*line-height: 1;*/
-    /*-webkit-text-size-adjust: none;*/
-    /*overflow-x: hidden;*/
-}
-
-
 html{
     scroll-behavior: smooth;
 }
@@ -17,9 +10,6 @@ html, body{
     padding: 0;
 }
 
-/**, ::after, ::before {*/
-/*    box-sizing: border-box;*/
-/*}*/
 
 
 .wrap nav{
@@ -228,15 +218,6 @@ html, body{
 }
 
 
-/*.intro:before{*/
-/*    content: '';*/
-/*    display: inline-block;*/
-/*    height: 100%;*/
-/*    margin-right: 0;*/
-/*    vertical-align: middle;*/
-/*    width: 1px;*/
-/*}*/
-
 .info{
     animation-duration: 1s;
     animation-timing-function: ease;
@@ -370,20 +351,6 @@ ul{
     color: #18bfef !important;
 }
 
-/*.info nav a:hover:before{*/
-/*    background-color: rgba(255,255,255,0.175);*/
-/*    color: #fff;*/
-/*}*/
-
-/*.info nav a:active{*/
-/*    font-size: 0.95em;*/
-/*    background: none;*/
-/*}*/
-
-/*.info nav a:active:before{*/
-/*    background-color: rgba(255,255,255,0.35);*/
-/*    color: #fff;*/
-/*}*/
 
 .info nav i {
     font-size: 1.7em;
@@ -398,22 +365,7 @@ ul{
 }
 
 
-/*checkout this one*/
-/*.icon:before {*/ 
-/*    -moz-osx-font-smoothing: grayscale;*/
-/*    -webkit-font-smoothing: antialiased;*/
-/*    font-style: normal;*/
-/*    font-weight: normal;*/
-/*    text-transform: none !important;*/
-/*}*/
 
-
-/*.wrap footer{*/
-/*    display: block;*/
-/*}*/
-
-
-/*.intro footer{*/
 .wrap footer{
     margin: 0;
     width: 90%;
@@ -453,8 +405,6 @@ ul{
 }
 
 
-
-/*.intro footer:after{*/
 .wrap footer:after{
     content: '';
     display: block;
@@ -466,7 +416,6 @@ ul{
 }
 
 .to-personal{
-    /*-webkit-appearance: none;*/
     position: relative;
     display: inline-block;
     border: solid 2px #e5e6e7;
@@ -487,13 +436,6 @@ ul{
 }
 
 
-/*#about-me{*/
-    /*height: 100%;*/
-    /*min-height: 100%;*/
-/*    padding-left: 0;*/
-/*    padding-right: 40px;*/
-/*}*/
-
 .person-desc{
     align-self: center;
     margin: auto;
@@ -513,18 +455,6 @@ ul{
     border-bottom: solid 1px #eeeeee;
     height: 80%;
 }
-
-/*.profile-image{*/
-    /*align-self: center;*/
-    /*margin: auto;*/
-/*    padding-left: 0;*/
-/*}*/
-
-/*.feature-skills{*/
-/*    list-style: none;*/
-/*    padding-left: 0;*/
-/*    margin: 0 0 2.25em 0;*/
-/*}*/
 
 
 .feature-skills{
